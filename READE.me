@@ -1,6 +1,114 @@
-git add .
-git commit -m "Corrige entry point e garante base para GitHub Pages"
-git push origin main
+# 🚀 Pipeline Git – CI/CD Front-End (Vite + React + GitHub Pages)
 
-git commit --allow-empty -m "🚀 Força rebuild e deploy limpo para GitHub Pages"
+## 🧭 Objetivo
+Garantir que cada commit e deploy sigam um fluxo padronizado, previsível e à prova de falhas — evitando conflitos, builds quebrados ou deploys desatualizados.
+
+---
+
+## 🔄 1. Preparação do Ambiente
+```bash
+git status              # verifica se há alterações pendentes
+git checkout main       # muda para a branch principal
+git pull origin main    # sincroniza com o GitHub
+```
+> Evita trabalhar em uma base desatualizada.
+
+---
+
+## 🧱 2. Desenvolvimento Local
+Trabalhe normalmente no código-fonte e depois:
+
+```bash
+git add .
+git commit -m "feat: melhoria no vite.config.ts e ajustes de build"
+```
+
+**Commits semânticos recomendados:**
+- `feat:` → nova funcionalidade  
+- `fix:` → correção de bug  
+- `chore:` → manutenção técnica  
+- `refactor:` → refatoração de código  
+- `perf:` → melhoria de performance  
+
+---
+
+## ⚙️ 3. Build de Produção
+```bash
+npm run build
+```
+Gera a pasta `/dist` com o código otimizado.
+
+> O `vite.config.ts` é lido neste momento. Se não buildar, o deploy usará configurações antigas.
+
+---
+
+## 🧩 4. Commit da Build
+Se o deploy usar GitHub Pages direto do branch `main` ou `gh-pages`:
+
+```bash
+git add dist -f
+git commit -m "build: atualização de artefatos de produção"
+```
+
+---
+
+## 🌐 5. Push e Deploy Automático
+```bash
 git push origin main
+```
+> O GitHub Actions executará automaticamente o deploy.
+
+---
+
+## 🧰 6. Verificação Pós-Deploy
+- Acesse a aba **Actions** no GitHub.  
+- Confirme se o deploy finalizou com sucesso.  
+- Teste o site publicado:  
+  `https://<usuario>.github.io/<nome-do-repositorio>/`
+
+---
+
+## 🧠 7. Boas Práticas
+| Item | Ação | Benefício |
+|------|------|------------|
+| 🧩 Branch protegida | Use PRs | Evita deploy acidental |
+| 🔖 Commits semânticos | Padroniza histórico | Facilita rastreio |
+| 🧹 Pull frequente | Atualiza código | Evita conflitos |
+| ⚡ Build antes do push | Garante consistência | Evita deploy quebrado |
+| 🧾 Actions monitoradas | CI/CD previsível | Transparência operacional |
+
+---
+
+## 🗂️ 8. Fluxo Visual
+
+```
+┌────────────────────────┐
+│   1. git pull origin   │ ← sincroniza com GitHub
+└────────────┬───────────┘
+             ↓
+┌────────────────────────┐
+│   2. Edita código      │ ← implementa melhorias
+└────────────┬───────────┘
+             ↓
+┌────────────────────────┐
+│   3. npm run build     │ ← gera pasta /dist
+└────────────┬───────────┘
+             ↓
+┌────────────────────────┐
+│   4. git commit + push │ ← envia para o GitHub
+└────────────┬───────────┘
+             ↓
+┌────────────────────────┐
+│   5. GitHub Actions    │ ← executa deploy automático
+└────────────┬───────────┘
+             ↓
+┌────────────────────────┐
+│   6. Site publicado 🌐 │
+└────────────────────────┘
+```
+
+---
+
+## 💼 Conclusão
+> Esse pipeline assegura **rastreabilidade, estabilidade e performance** no ciclo de vida do front-end.  
+> Cada entrega passa por **build validado, commit documentado e deploy automatizado** — eliminando riscos e retrabalho.
