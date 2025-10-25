@@ -2,6 +2,43 @@
 
 ## 🧩 Overview
 
+## 🌐 CompressorWeb
+
+**CompressorWeb** é uma ferramenta web inovadora que **comprime e otimiza imagens de qualquer tamanho**, permitindo que sejam ajustadas para dimensões personalizadas, **reduzindo o peso sem comprometer a qualidade visual**.  
+As imagens resultantes estão prontas para uso imediato em **projetos web, blogs, portfólios e aplicações digitais**.
+
+---
+
+## ⚡ Principais Funcionalidades
+
+- Compressão de imagens de todos os tamanhos.  
+- Redução de peso sem perda perceptível de qualidade.  
+- Ajuste para tamanhos personalizados.  
+- Pronto para uso em projetos web, mantendo performance e estética.  
+
+---
+
+## 🧠 Importância de Otimizar Imagens para Web
+
+1. **Performance**: imagens grandes aumentam o tempo de carregamento e afetam a experiência do usuário.  
+2. **Redução de custo**: menor consumo de dados e armazenamento, essencial para hosting e mobile.  
+3. **SEO e UX**: sites rápidos e responsivos têm melhor posicionamento em motores de busca.  
+4. **Prontidão para web**: imagens otimizadas podem ser usadas imediatamente em qualquer projeto digital.  
+
+---
+
+## 🚀 Benefícios do CompressorWeb
+
+- Automatiza o processo de compressão e dimensionamento de imagens.  
+- Garante imagens leves, rápidas e visualmente consistentes.  
+- Melhora o desempenho de sites e aplicações web.  
+- Facilita o workflow de desenvolvimento, economizando tempo e recursos.  
+
+---
+
+> Transforme seu conteúdo visual em assets web-otimizados e prontos para produção com **CompressorWeb**.
+
+
 **CompressorWeb** é uma aplicação web desenvolvida em **React + Vite + TypeScript**, voltada para **compressão e manipulação de arquivos** diretamente no navegador, sem necessidade de backend.  
 O foco central é oferecer uma **interface performática, leve e intuitiva**, com **build otimizada** e **deploy automatizado via GitHub Pages**.
 
