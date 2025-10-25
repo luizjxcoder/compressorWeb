@@ -1,7 +1,5 @@
 # 📘 DOCUMENTATION — CompressorWeb
 
-## 🧩 Overview
-
 ## 🌐 CompressorWeb
 
 **CompressorWeb** é uma ferramenta web inovadora que **comprime e otimiza imagens de qualquer tamanho**, permitindo que sejam ajustadas para dimensões personalizadas, **reduzindo o peso sem comprometer a qualidade visual**.  
@@ -38,6 +36,7 @@ As imagens resultantes estão prontas para uso imediato em **projetos web, blogs
 
 > Transforme seu conteúdo visual em assets web-otimizados e prontos para produção com **CompressorWeb**.
 
+## 🧩 Overview
 
 **CompressorWeb** é uma aplicação web desenvolvida em **React + Vite + TypeScript**, voltada para **compressão e manipulação de arquivos** diretamente no navegador, sem necessidade de backend.  
 O foco central é oferecer uma **interface performática, leve e intuitiva**, com **build otimizada** e **deploy automatizado via GitHub Pages**.
