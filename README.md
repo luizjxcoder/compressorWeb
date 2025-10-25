@@ -221,5 +221,5 @@ Este projeto é licenciado sob a [MIT License](./LICENSE).
 ## 👤 Autor
 
 **Luiz Alberto**  
-Analista de Sistemas | Web Developer | Especialista em Growth e Design  
+Analista de Sistemas | Desenvolvedor Web Full Stack | UX/UI Designer
 🔗 [GitHub](https://github.com/luizjxcoder)
