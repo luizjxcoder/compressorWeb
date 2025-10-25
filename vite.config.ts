@@ -29,7 +29,8 @@ export default defineConfig(({ mode }) => {
     }
   }
 
-  return {
+     return {
+     base: '/compressorWeb/', // 👈 isso aqui é fundamental!
     plugins: [react()],
     build,
     esbuild,
