@@ -51,7 +51,7 @@ export default defineConfig(({ mode }) => {
   }
 
   return {
-    base: '/compressorWeb/', // 👈 Necessário para GitHub Pages
+    base: isDev ? '/' : '/compressorWeb/', // alterna automaticamente
     plugins: [react()],
     build,
     esbuild,
