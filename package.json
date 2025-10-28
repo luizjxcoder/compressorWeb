@@ -4,16 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "deploy": "gh-pages -d dist",
-    "dev": "vite",
-    "build": "vite build --mode production",
-    "build:dev": "vite build --mode development",
-    "lint": "eslint .",
-    "preview": "vite preview"
+  "deploy": "npm run build && gh-pages -d dist",
+  "dev": "vite",
+  "build": "vite build --mode production",
+  "preview": "vite preview",
+  "build:dev": "vite build --mode development",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@lumi.new/sdk": "0.2.1",
-    "@vitejs/plugin-react-swc": "^4.1.0",
     "browser-image-compression": "^2.0.2",
     "framer-motion": "^10.16.16",
     "lucide-react": "^0.540.0",
@@ -23,6 +22,7 @@
     "react-hot-toast": "^2.4.1"
   },
   "devDependencies": {
+     "@vitejs/plugin-react-swc": "^4.1.0",
     "@eslint/js": "^9.9.1",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
